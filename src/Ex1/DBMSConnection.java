@@ -3,10 +3,10 @@ import java.sql.*;
 
 public class DBMSConnection {
 	
-	private static String url ="jdbc:oracle:thin:@localhost:1521:xe";
+	private static String url ="@{<ipAddress>|<hostName>}:<port>:<SID>";
 	private static String driver ="oracle.jdbc.driver.OracleDriver";
-	private static String user ="system";
-	private static String password="system";
+	private static String user ="yourUsername";
+	private static String password="yourPassword";
 	private static Connection con;
 	
 	public static Connection getConnection() {
